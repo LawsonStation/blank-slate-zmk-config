@@ -58,7 +58,7 @@
  &mt LCTRL ESC  &mt LCTRL A &mt LALT R &mt LGUI S &mt LSHFT T   &kp G          &kp M            &mt LSHFT N    &mt LGUI E  &mt LALT I &mt LCTRL O   &kp QUOT
  &kp LSHFT      &kp Z      &kp X      &kp C       &mt LCTRL D   &kp V          &kp K            &mt LCTRL H    &kp COMMA   &kp DOT    &kp SEMI      &kp RET
 #endif
- &kp LCTRL      &mo ADJ_L  &kp LGUI  &kp LALT    &mo NAV_L      &kp SPACE      &kp RET          &mo NUM_L      &kp LEFT    &kp UP     &kp DOWN      &kp RIGHT
+ &kp LCTRL      &mo ADJ_L  &kp LGUI  &kp LALT    &mo NAV_L      &kp SPACE      &kp RET          &mo NUM_L      &kp BSPC    &kp DEL    &kp PG_DN     &kp PG_UP
             >;
         };
 
@@ -75,10 +75,10 @@
         num_layer {
             label = "Num";
             bindings = <
-&trans     &kp LBKT   &trans &trans &trans    &kp RBKT    &kp C_PREV    &kp N7     &kp N8      &kp N9       &trans     &trans
-&trans     &kp MINUS  &trans &trans &trans    &kp EQUAL   &kp C_NEXT    &kp N4     &kp N5      &kp N6       &trans     &trans
-&trans     &kp GRAVE  &trans &trans &trans    &kp BSLH    &trans        &kp N1     &kp N2      &kp N3       &trans     &trans
-&trans      &trans       &trans     &kp N0      &trans    &none         &none     &kp ESC        &kp DEL      &trans &trans &trans
+&trans          &kp BLSH    &kp N7      &kp N8      &kp N9          &kp LBKT    &kp RBKT    &kp PLUS   &kp MINUS   &kp STAR     &kp SLASH   &trans
+&trans          &kp EQUAL   &mt LCTRL N4 &mt LGUI N5 &mt LSHFT N6   &kp LPAR    &kp RPAR    &kp LSHFT  &kp LGUI    &kp LALT     &kp DLLR    &kp PRCNT
+&trans          &kp MINUS   &kp N1      &kp N2      &mt LCTRL N3    &kp GRAVE   &kp EQUAL   &kp LCTRL  &kp COMMA   &kp DOT      &kp SLASH   &trans
+&trans          &trans      &trans      &kp DOT     &kp N0          &trans      &trans      &kp ESC    &kp DEL     &trans       &trans      &trans
             >;
         };
 
