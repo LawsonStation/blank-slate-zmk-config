@@ -29,6 +29,18 @@
 #define BT(n) BT_SEL n
 
 / {
+    behaviors {
+        // Adapted from https://zmk.dev/docs/keymaps/behaviors/hold-tap#option-2-tap-preferred
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+    
     macros {
       /* ZMK_MACRO(thumbs_up,
 		wait-ms = <1>;
@@ -55,12 +67,12 @@
             bindings = <
 #ifdef QWERTY_BASE
  &kp TAB        &kp Q      &kp W      &kp E       &kp R         &kp T          &kp Y            &kp U          &kp I       &kp O      &kp P         &kp MINUS
- &mt LCTRL ESC  &mt LCTRL A &mt LALT S &mt LGUI D &mt LSHFT F   &kp G          &kp H            &mt LSHFT J    &mt LGUI K  &mt LALT L &mt LCTRL SEMI &kp QUOT
- &kp LSHFT      &kp Z      &kp X      &kp C       &mt LCTRL V   &kp B          &kp N            &mt LCTRL M    &kp COMMA   &kp DOT    &kp FSLH      &kp RET
+ &hr LCTRL ESC  &hr LCTRL A &hr LALT S &hr LGUI D &hr LSHFT F   &kp G          &kp H            &hr LSHFT J    &hr LGUI K  &hr LALT L &hr LCTRL SEMI &kp QUOT
+ &kp LSHFT      &kp Z      &kp X      &kp C       &hr LCTRL V   &kp B          &kp N            &hr LCTRL M    &kp COMMA   &kp DOT    &kp FSLH      &kp RET
 #else
  &kp TAB        &kp Q      &kp W      &kp F       &kp P         &kp B          &kp J            &kp L          &kp U       &kp Y      &kp QUOT      &kp MINUS
- &mt LCTRL ESC  &mt LCTRL A &mt LALT R &mt LGUI S &mt LSHFT T   &kp G          &kp M            &mt LSHFT N    &mt LGUI E  &mt LALT I &mt LCTRL O   &kp QUOT
- &kp LSHFT      &kp Z      &kp X      &kp C       &mt LCTRL D   &kp V          &kp K            &mt LCTRL H    &kp COMMA   &kp DOT    &kp SEMI      &kp RET
+ &hr LCTRL ESC  &hr LCTRL A &hr LALT R &hr LGUI S &hr LSHFT T   &kp G          &kp M            &hr LSHFT N    &hr LGUI E  &hr LALT I &hr LCTRL O   &kp QUOT
+ &kp LSHFT      &kp Z      &kp X      &kp C       &hr LCTRL D   &kp V          &kp K            &hr LCTRL H    &kp COMMA   &kp DOT    &kp SEMI      &kp RET
 #endif
  &kp LCTRL      &mo ADJ_L  &kp LGUI  &kp LALT    &mo NAV_L      &kp SPACE      &kp RET          &mo NUM_L      &kp BSPC    &kp DEL    &kp PG_DN     &kp PG_UP
             >;
@@ -70,8 +82,8 @@
             label = "Nav";
             bindings = <
 &trans          &kp F12     &kp F7     &kp F8      &kp F9           &trans       &trans    &trans           &trans      &trans          &trans &trans
-&trans          &kp F11     &mt LALT F4 &mt LGUI F5 &mt LSHFT F6    &trans       &kp LEFT  &mt LSHFT DOWN   &mt LGUI UP &mt LCTRL RIGHT &trans &trans
-&trans          &kp F10     &kp F1     &kp F2      &mt LCTRL F3     &trans       &kp HOME  &mt LCTRL PG_UP  &kp PG_DN   &kp END         &trans &trans
+&trans          &kp F11     &hr LALT F4 &hr LGUI F5 &hr LSHFT F6    &trans       &kp LEFT  &hr LSHFT DOWN   &hr LGUI UP &hr LCTRL RIGHT &trans &trans
+&trans          &kp F10     &kp F1     &kp F2      &hr LCTRL F3     &trans       &kp HOME  &hr LCTRL PG_UP  &kp PG_DN   &kp END         &trans &trans
 &trans          &trans      &trans     &trans      &trans           &trans       &trans    &trans           &trans      &trans          &trans &trans
             >;
         };
@@ -80,8 +92,8 @@
             label = "Num";
             bindings = <
 &trans          &kp BSLH    &kp N7      &kp N8      &kp N9          &kp LBKT    &kp RBKT    &kp PLUS   &kp MINUS   &kp STAR     &kp SLASH   &trans
-&trans          &kp EQUAL   &mt LCTRL N4 &mt LGUI N5 &mt LSHFT N6   &kp LPAR    &kp RPAR    &kp LSHFT  &kp LGUI    &kp LALT     &kp DLLR    &kp PRCNT
-&trans          &kp MINUS   &kp N1      &kp N2      &mt LCTRL N3    &kp GRAVE   &kp EQUAL   &kp LCTRL  &kp COMMA   &kp DOT      &kp SLASH   &trans
+&trans          &kp EQUAL   &hr LCTRL N4 &hr LGUI N5 &hr LSHFT N6   &kp LPAR    &kp RPAR    &kp LSHFT  &kp LGUI    &kp LALT     &kp DLLR    &kp PRCNT
+&trans          &kp MINUS   &kp N1      &kp N2      &hr LCTRL N3    &kp GRAVE   &kp EQUAL   &kp LCTRL  &kp COMMA   &kp DOT      &kp SLASH   &trans
 &trans          &trans      &trans      &kp DOT     &kp N0          &trans      &trans      &kp ESC    &kp DEL     &trans       &trans      &trans
             >;
         };
