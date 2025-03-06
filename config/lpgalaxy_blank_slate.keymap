@@ -75,13 +75,14 @@
         num_layer {
             label = "Num";
             bindings = <
-&trans          &kp BLSH    &kp N7      &kp N8      &kp N9          &kp LBKT    &kp RBKT    &kp PLUS   &kp MINUS   &kp STAR     &kp SLASH   &trans
+&trans          &kp BSLH    &kp N7      &kp N8      &kp N9          &kp LBKT    &kp RBKT    &kp PLUS   &kp MINUS   &kp STAR     &kp SLASH   &trans
 &trans          &kp EQUAL   &mt LCTRL N4 &mt LGUI N5 &mt LSHFT N6   &kp LPAR    &kp RPAR    &kp LSHFT  &kp LGUI    &kp LALT     &kp DLLR    &kp PRCNT
 &trans          &kp MINUS   &kp N1      &kp N2      &mt LCTRL N3    &kp GRAVE   &kp EQUAL   &kp LCTRL  &kp COMMA   &kp DOT      &kp SLASH   &trans
 &trans          &trans      &trans      &kp DOT     &kp N0          &trans      &trans      &kp ESC    &kp DEL     &trans       &trans      &trans
             >;
         };
 
+        // TODO: fix or deprecate
         sym_layer {
             label = "Sym";
             bindings = <
