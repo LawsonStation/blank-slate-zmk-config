@@ -96,10 +96,10 @@
         adj_layer {
             label = "Adj";
             bindings = <
-&bt BT_CLR  &trans      &trans      &trans      &trans      &trans      &trans  &trans  &trans  &trans       &trans         &bootloader
-&trans      &trans      &trans      &trans      &trans      &trans      &trans  &trans  &trans  &trans       &trans         &kp C_PLAY_PAUSE
-&trans      &bt BT(0)   &bt BT(1)   &bt BT(2)   &bt BT(3)   &bt BT(4)   &trans  &trans  &trans  &trans       &trans         &kp C_MUTE
-&trans      &trans      &trans      &trans      &trans      &trans      &trans  &trans  &C_PREV &kp C_VOL_DN &kp C_VOL_UP   &kp C_NEXT
+&bt BT_CLR  &trans      &trans      &trans      &trans      &trans      &trans  &trans  &trans      &trans       &trans         &bootloader
+&trans      &trans      &trans      &trans      &trans      &trans      &trans  &trans  &trans      &trans       &trans         &kp C_PLAY_PAUSE
+&trans      &bt BT(0)   &bt BT(1)   &bt BT(2)   &bt BT(3)   &bt BT(4)   &trans  &trans  &trans      &trans       &trans         &kp C_MUTE
+&trans      &trans      &trans      &trans      &trans      &trans      &trans  &trans  &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP   &kp C_NEXT
 
             >;
         };
