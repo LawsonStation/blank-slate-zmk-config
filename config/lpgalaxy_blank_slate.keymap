@@ -20,7 +20,11 @@
 &lt { quick_tap_ms = <200>; };
 
 // Set Mod-Tap tapping term
-&mt { tapping-term-ms = <200>; };
+&mt { 
+    tapping-term-ms = <200>;
+    // TODO: see if there is a global-quick-tap setting
+    quick-tap-ms = <0>;
+};
 
 #define BT(n) BT_SEL n
 
