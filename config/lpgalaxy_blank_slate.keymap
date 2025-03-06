@@ -14,6 +14,7 @@
 #define NAV_L 1
 #define NUM_L 2
 #define SYM_L 3
+#define ADJ_L 4
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
@@ -25,11 +26,11 @@
 
 / {
     macros {
-      ZMK_MACRO(thumbs_up,
+      /* ZMK_MACRO(thumbs_up,
 		wait-ms = <1>;
 		tap-ms = <5>;
                 bindings = <&kp PLUS &kp COLON &kp PLUS &kp N1 &kp COLON &kp RET>;
-		)
+		) */
     };
     
     tap_dances {
