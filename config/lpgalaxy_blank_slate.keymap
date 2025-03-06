@@ -50,8 +50,8 @@
             bindings = <
 #ifdef QWERTY_BASE
  &kp TAB        &kp Q      &kp W      &kp E       &kp R          &kp T          &kp Y            &kp U          &kp I       &kp O      &kp P         &kp MINUS
- &mt LCTRL ESC  &kp A      &kp S      &kp D       &kp F          &kp G          &kp H            &kp J          &kp K       &kp L      &kp SEMI      &kp QUOT
- &kp LSHFT      &kp Z      &kp X      &kp C       &kp V          &kp B          &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH      &kp RET
+ &mt LCTRL ESC  &mt LCTRL A &mt LALT S &mt LGUI D  &mt LSHFT F   &kp G          &kp H            &mt LSHFT J    &mt LGUI K  &mt LALT L &mt LCTRL SEMI &kp QUOT
+ &kp LSHFT      &kp Z      &kp X      &kp C       &mt LCTRL V    &kp B          &kp N            &mt LCTRL M    &kp COMMA   &kp DOT    &kp FSLH      &kp RET
 #else
  &kp TAB        &kp Q      &kp W      &kp F       &kp P          &kp B          &kp J            &kp L          &kp U       &kp Y      &kp QUOT      &kp MINUS
  &mt LCTRL ESC  &kp A      &kp R      &kp S       &kp T          &kp G          &kp M            &kp N          &kp E       &kp I      &kp O         &kp QUOT
