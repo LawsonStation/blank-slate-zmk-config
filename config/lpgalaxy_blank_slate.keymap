@@ -70,11 +70,11 @@
 #ifdef QWERTY_BASE
  &kp TAB        &kp Q      &kp W      &kp E       &kp R         &kp T          &kp Y            &kp U          &kp I       &kp O      &kp P         &kp MINUS
  &hm LCTRL ESC  &hm LCTRL A &hm LALT S &hm LGUI D &hm LSHFT F   &kp G          &kp H            &hm LSHFT J    &hm LGUI K  &hm LALT L &hm LCTRL SEMI &kp QUOT
- &kp LSHFT      &kp Z      &kp X      &kp C       &hm LCTRL V   &kp B          &kp N            &hm LCTRL M    &kp COMMA   &kp DOT    &kp FSLH      &kp RET
+ &kp LSHFT      &kp Z      &kp X      &hm LCTRL C &hm LCTRL V   &kp B          &kp N            &hm LCTRL M    &hm LCTRL COMMA  &kp DOT    &kp FSLH      &kp RET
 #else
  &kp TAB        &kp Q      &kp W      &kp F       &kp P         &kp B          &kp J            &kp L          &kp U       &kp Y      &kp QUOT      &kp MINUS
- &hm LCTRL ESC  &hm LCTRL A &hm LALT R &hm LGUI S &hm LSHFT T   &kp G          &kp M            &hm LSHFT N    &hm LGUI E  &hm LALT I &hm LCTRL O   &kp QUOT
- &kp LSHFT      &kp Z      &kp X      &kp C       &hm LCTRL D   &kp V          &kp K            &hm LCTRL H    &kp COMMA   &kp DOT    &kp SEMI      &kp RET
+ &hm LCTRL ESC  &hp A 	   &hm LALT R &hm LGUI S  &hm LSHFT T   &kp G          &kp M            &hm LSHFT N    &hm LGUI E  &hm LALT I &kp O   	    &kp QUOT
+ &kp LSHFT      &kp Z      &kp X      &km LCTRL C &hm LCTRL D   &kp V          &kp K            &hm LCTRL H    &hm LCTRL COMMA	&kp DOT    &kp SEMI      &kp RET
 #endif
  &kp LCTRL      &mo ADJ_L  &kp LGUI  &kp LALT    &mo NAV_L      &kp SPACE      &kp RET          &mo NUM_L      &kp BSPC    &kp DEL    &kp PG_DN     &kp PG_UP
             >;
@@ -84,8 +84,8 @@
             label = "Nav";
             bindings = <
 &trans          &kp F12     &kp F7     &kp F8      &kp F9           &trans       &trans    &trans           &trans      &trans          &trans &trans
-&trans          &kp F11     &hm LALT F4 &hm LGUI F5 &hm LSHFT F6    &trans       &kp LEFT  &hm LSHFT DOWN   &hm LGUI UP &hm LCTRL RIGHT &trans &trans
-&trans          &kp F10     &kp F1     &kp F2      &hm LCTRL F3     &trans       &kp HOME  &hm LCTRL PG_UP  &kp PG_DN   &kp END         &trans &trans
+&trans          &kp F11     &hm LALT F4 &hm LGUI F5 &hm LSHFT F6    &trans       &kp LEFT  &hm LSHFT DOWN   &hm LGUI UP &hm LALT RIGHT &trans &trans
+&trans          &kp F10     &kp F1     &hm LCTRL F2 &hm LCTRL F3    &trans       &kp HOME  &hm LCTRL PG_UP  &hm LCTRL PG_DN &kp END         &trans &trans
 &trans          &trans      &trans     &trans      &trans           &trans       &trans    &trans           &trans      &trans          &trans &trans
             >;
         };
@@ -94,8 +94,8 @@
             label = "Num";
             bindings = <
 &trans          &kp BSLH    &kp N7      &kp N8      &kp N9          &kp LBKT    &kp RBKT    &kp PLUS   &kp MINUS   &kp STAR     &kp SLASH   &trans
-&trans          &kp EQUAL   &hm LCTRL N4 &hm LGUI N5 &hm LSHFT N6   &kp LPAR    &kp RPAR    &kp LSHFT  &kp LGUI    &kp LALT     &kp DLLR    &kp PRCNT
-&trans          &kp MINUS   &kp N1      &kp N2      &hm LCTRL N3    &kp GRAVE   &kp EQUAL   &kp LCTRL  &kp COMMA   &kp DOT      &kp SLASH   &trans
+&trans          &kp EQUAL   &hm LALT N4 &hm LGUI N5  &hm LSHFT N6    &kp LPAR    &kp RPAR    &kp LSHFT  &kp LGUI    &kp LALT     &kp DLLR    &kp PRCNT
+&trans          &kp MINUS   &kp N1      &hm LCTRL N2 &hm LCTRL N3    &kp GRAVE   &kp EQUAL   &kp LCTRL  &hm LCTRL COMMA  &kp DOT      &kp SLASH   &trans
 &trans          &trans      &trans      &kp DOT     &kp N0          &trans      &trans      &kp ESC    &kp DEL     &trans       &trans      &trans
             >;
         };
